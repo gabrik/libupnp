@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="ixml">
+        <df name="src">
+          <in>attr.c</in>
+          <in>document.c</in>
+          <in>element.c</in>
+          <in>ixml.c</in>
+          <in>ixmldebug.c</in>
+          <in>ixmlmembuf.c</in>
+          <in>ixmlparser.c</in>
+          <in>namedNodeMap.c</in>
+          <in>node.c</in>
+          <in>nodeList.c</in>
+        </df>
+      </df>
+      <df name="threadutil">
+        <df name="src">
+          <in>FreeList.c</in>
+          <in>LinkedList.c</in>
+          <in>ThreadPool.c</in>
+          <in>TimerThread.c</in>
+        </df>
+      </df>
+      <df name="upnp">
+        <df name="sample">
+          <df name="common">
+            <in>sample_util.c</in>
+            <in>tv_ctrlpt.c</in>
+            <in>tv_device.c</in>
+          </df>
+          <df name="linux">
+            <in>tv_combo_main.c</in>
+            <in>tv_ctrlpt_main.c</in>
+            <in>tv_device_main.c</in>
+          </df>
+        </df>
+        <df name="src">
+          <df name="api">
+            <in>UpnpString.c</in>
+            <in>upnpapi.c</in>
+            <in>upnptools.c</in>
+          </df>
+          <df name="gena">
+            <in>gena_callback2.c</in>
+            <in>gena_ctrlpt.c</in>
+            <in>gena_device.c</in>
+          </df>
+          <df name="genlib">
+            <df name="client_table">
+              <in>client_table.c</in>
+            </df>
+            <df name="miniserver">
+              <in>miniserver.c</in>
+            </df>
+            <df name="net">
+              <df name="http">
+                <in>httpparser.c</in>
+                <in>httpreadwrite.c</in>
+                <in>parsetools.c</in>
+                <in>statcodes.c</in>
+                <in>webserver.c</in>
+              </df>
+              <df name="uri">
+                <in>uri.c</in>
+              </df>
+              <in>sock.c</in>
+            </df>
+            <df name="service_table">
+              <in>service_table.c</in>
+            </df>
+            <df name="util">
+              <in>membuffer.c</in>
+              <in>strintmap.c</in>
+              <in>upnp_timeout.c</in>
+              <in>util.c</in>
+            </df>
+          </df>
+          <df name="soap">
+            <in>soap_common.c</in>
+            <in>soap_ctrlpt.c</in>
+            <in>soap_device.c</in>
+          </df>
+          <df name="ssdp">
+            <in>ssdp_ctrlpt.c</in>
+            <in>ssdp_device.c</in>
+            <in>ssdp_server.c</in>
+          </df>
+          <df name="urlconfig">
+            <in>urlconfig.c</in>
+          </df>
+          <df name="uuid">
+            <in>md5.c</in>
+            <in>sysdep.c</in>
+            <in>uuid.c</in>
+          </df>
+          <in>inet_pton.c</in>
+        </df>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+      <itemPath>configure</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-Os"/>
+        <element flagsID="1" commonFlags="-Os -fPIC"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+          <cTool>
+            <preprocessorList>
+              <Elem>HAVE_CONFIG_H</Elem>
+            </preprocessorList>
+          </cTool>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand>./configure CC=${IDE_CC} CXX=${IDE_CXX} CFLAGS="-g3 -gdwarf-2" CXXFLAGS="-g3 -gdwarf-2"</preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <folder path="0/ixml">
+        <cTool>
+          <incDir>
+            <pElem>ixml</pElem>
+            <pElem>.</pElem>
+            <pElem>upnp/inc</pElem>
+            <pElem>ixml/inc</pElem>
+            <pElem>ixml/src/inc</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+            <Elem>PIC</Elem>
+          </preprocessorList>
+        </cTool>
+      </folder>
+      <folder path="0/threadutil">
+        <cTool>
+          <incDir>
+            <pElem>threadutil</pElem>
+            <pElem>.</pElem>
+            <pElem>upnp/inc</pElem>
+            <pElem>threadutil/inc</pElem>
+            <pElem>threadutil/src/inc</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NDEBUG</Elem>
+            <Elem>PIC</Elem>
+          </preprocessorList>
+        </cTool>
+      </folder>
+      <folder path="0/upnp/sample">
+        <cTool>
+          <incDir>
+            <pElem>upnp/sample</pElem>
+            <pElem>.</pElem>
+            <pElem>upnp/inc</pElem>
+            <pElem>threadutil/inc</pElem>
+            <pElem>ixml/inc</pElem>
+            <pElem>upnp/sample/common</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/upnp/src">
+        <cTool>
+          <incDir>
+            <pElem>upnp</pElem>
+            <pElem>.</pElem>
+            <pElem>upnp/inc</pElem>
+            <pElem>threadutil/inc</pElem>
+            <pElem>ixml/inc</pElem>
+            <pElem>upnp/src/inc</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>PIC</Elem>
+          </preprocessorList>
+        </cTool>
+      </folder>
+      <item path="ixml/src/attr.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="ixml/src/document.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="ixml/src/element.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="ixml/src/ixml.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="ixml/src/ixmldebug.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="ixml/src/ixmlmembuf.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="ixml/src/ixmlparser.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="ixml/src/namedNodeMap.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="ixml/src/node.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="ixml/src/nodeList.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="threadutil/src/FreeList.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="threadutil/src/LinkedList.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="threadutil/src/ThreadPool.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="threadutil/src/TimerThread.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/sample/common/sample_util.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+          <incDir>
+            <pElem>upnp/sample/tvctrlpt</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="upnp/sample/common/tv_ctrlpt.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+          <incDir>
+            <pElem>upnp/sample/tvctrlpt</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="upnp/sample/common/tv_device.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+          <incDir>
+            <pElem>upnp/sample/tvcombo</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="upnp/sample/linux/tv_combo_main.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+          <incDir>
+            <pElem>upnp/sample/tvcombo</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="upnp/sample/linux/tv_ctrlpt_main.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+          <incDir>
+            <pElem>upnp/sample/tvctrlpt</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="upnp/sample/linux/tv_device_main.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+          <incDir>
+            <pElem>upnp/sample/tvdevice</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="upnp/src/api/UpnpString.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/api/upnpapi.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/api/upnptools.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/gena/gena_callback2.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/gena/gena_ctrlpt.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/gena/gena_device.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/genlib/client_table/client_table.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/genlib/miniserver/miniserver.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/genlib/net/http/httpparser.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/genlib/net/http/httpreadwrite.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/genlib/net/http/parsetools.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/genlib/net/http/statcodes.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/genlib/net/http/webserver.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/genlib/net/sock.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/genlib/net/uri/uri.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/genlib/service_table/service_table.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/genlib/util/membuffer.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/genlib/util/strintmap.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/genlib/util/upnp_timeout.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/genlib/util/util.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/inet_pton.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/soap/soap_common.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/soap/soap_ctrlpt.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/soap/soap_device.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/ssdp/ssdp_ctrlpt.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/ssdp/ssdp_device.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/ssdp/ssdp_server.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/urlconfig/urlconfig.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/uuid/md5.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/uuid/sysdep.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="upnp/src/uuid/uuid.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

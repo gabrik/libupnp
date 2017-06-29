@@ -419,6 +419,15 @@ owners.
 
 ## 10. IXML support for scriptinglanguages
 
+
+```
+% cd ixml
+% make install
+# echo "include /usr/local/lib" >> /etc/ld.so.conf
+# ldconfig
+```
+
+
 The treestructure of XML documents created by IXML is hard to maintain when
 creating a binding for a scripting language. Even when many elements may 
 never be used on the script side, it requires copying the entire tree 

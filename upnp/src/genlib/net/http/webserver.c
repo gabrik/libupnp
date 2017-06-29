@@ -1363,7 +1363,7 @@ static int http_RecvPostMessage(
 	int ret_code = HTTP_OK;
 
 	if (Instr && Instr->IsVirtualFile) {
-		Fp = (virtualDirCallback.open) (filename, UPNP_WRITE);
+		Fp = (virtualDirCallback.open) (filename, UPNP_WRITE,&info->foreign_sockaddr);
 		if (Fp == NULL)
 			return HTTP_INTERNAL_SERVER_ERROR;
 	} else {

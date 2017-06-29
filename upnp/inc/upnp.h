@@ -45,7 +45,7 @@
 #include "upnpconfig.h"
 #include "UpnpGlobal.h"
 #include "UpnpInet.h"
-
+#include <sys/socket.h>
 /*
  * \todo Document the exact reason of these include files and solve this
  * include mess in an include file like UpnpTime.h
@@ -2701,7 +2701,11 @@ typedef UpnpWebFileHandle (*VDCallback_Open)(
 		const char *filename,
 		/*! [in] The mode in which to open the file.
 		 * Valid values are \c UPNP_READ or \c UPNP_WRITE. */
-		enum UpnpOpenFileMode Mode);
+		enum UpnpOpenFileMode Mode,
+                /*[in] The sockaddr_storage containt information 
+                 * about the client*/
+                const struct sockaddr_storage* foreign_sockaddr
+                );
 
 /*!
  * \brief Sets the open callback function to be used to access a virtual

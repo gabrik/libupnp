@@ -422,12 +422,8 @@ int http_SendMessage(SOCKINFO *info, int *TimeOut, const char *fmt, ...)
 			/* file name */
 			filename = va_arg(argp, char *);
 			if (Instr && Instr->IsVirtualFile){
-                             struct sockaddr *s = (struct sockaddr*)&info->foreign_sockaddr;
-                            struct sockaddr_in *sin = (struct sockaddr_in *) s;
-                            char *ip;
-                            ip = inet_ntoa(sin->sin_addr);
-                            printf("\x1B[32m" "IP IS %s\n" "\x1B[0m",inet_ntoa(sin->sin_addr));
-                            Fp = (virtualDirCallback.open)(filename, UPNP_READ);
+                            
+                            Fp = (virtualDirCallback.open)(filename, UPNP_READ,&info->foreign_sockaddr);
                         }
                             
 				
